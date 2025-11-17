@@ -1,0 +1,238 @@
+/* Inventory Specific Styles */
+.content {
+    padding-right: 10px;
+    padding-left: 30px;
+}
+
+.inventory-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -10px;
+    padding-right: 0px;
+    font-family: 'Segoe UI','Poppins', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.inventory-search-form {
+    display: flex;
+    align-items: center;
+    width: 308px;
+    height: 38px;
+    background: white;
+    border: 2.5px solid #C92126;
+    border-radius: 4px;
+    padding: 0 12px;
+    flex-shrink: 0;
+}
+
+.inventory-search-form .search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    background: transparent;
+    min-width: 0;
+}
+
+.inventory-search-form .search-icon {
+    width: 14px;
+    height: 14px;
+    margin-left: 10px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+.inventory-boxes {
+    display: flex;
+    gap: 40px;
+    margin-top: 25px;
+}
+
+.inventory-box {
+    width: 250px;
+    height: 140px;
+    border-radius: 10px;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 7px 15px rgba(0, 0, 0, 0.24);
+}
+
+.inventory-box.green {
+    background: rgba(1, 167, 104, 0.3);
+    border-color: #01A768;
+}
+
+.inventory-box.blue {
+    background: rgba(3, 169, 245, 0.3);
+    border-color: #03A9F5;
+}
+
+.inventory-box.purple {
+    background: rgba(156, 39, 176, 0.3);
+    border-color: #9C27B0;
+}
+
+.inventory-box.orange {
+    background: rgba(255, 152, 0, 0.3);
+    border-color: #FF9800;
+}
+
+.inventory-box.yellow {
+    background: rgba(255, 230, 0, 0.3);
+    border-color: #ebd302;
+}
+
+.inventory-box.red {
+    background: rgba(244, 67, 54, 0.3);
+    border-color: #F44336;
+}
+
+.inventory-box-inner {
+    flex: 1;
+    background: white;
+    border-bottom: 1px solid;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.inventory-box.green .inventory-box-inner { border-color: #01A768; }
+.inventory-box.blue .inventory-box-inner { border-color: #03A9F5; }
+.inventory-box.purple .inventory-box-inner { border-color: #9C27B0; }
+.inventory-box.yellow .inventory-box-inner { border-color: #ebd302; }
+.inventory-box.orange .inventory-box-inner { border-color: #FF9800; }
+.inventory-box.red .inventory-box-inner { border-color: #F44336; }
+
+.inventory-box-inner img {
+    width: 35px;
+    height: 35px;
+}
+
+.inventory-box-number {
+    font-weight: 650;
+    font-size: 22px;
+    line-height: 22px;
+}
+
+.inventory-box-label {
+    font-weight: 550;
+    font-size: 14px;
+    line-height: 15px;
+    text-align: center;
+}
+
+.inventory-box-view {
+    font-size: 11px;
+    line-height: 22px;
+    text-align: center;
+    color: #1D242E;
+    padding: 0 15px;
+    text-decoration: none;
+}
+
+.recent-activity-section {
+    margin-top: 20px;
+}
+
+.recent-activity-title {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.recent-activity-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.activity-card {
+    background: white;
+    border: 1px solid rgba(29, 36, 46, 0.15);
+    border-radius: 8px;
+    padding: 18px;
+}
+
+.activity-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.activity-user {
+    font-weight: 600;
+    font-size: 14px;
+    color: #1D242E;
+}
+
+.activity-time {
+    font-size: 11px;
+    color: #666;
+}
+
+.activity-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+.activity-detail-label {
+    font-size: 11px;
+    color: #666;
+}
+
+.activity-detail-value {
+    font-size: 12px;
+    font-weight: 500;
+    color: #1D242E;
+}
+
+.update-stock-btn {
+    width: 230px;
+    height: 43px;
+    background: #C92126;
+    transition: background 0.2s;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Print Styles */
+@media print {
+    .header, .sidebar, .search-form, .print-btn, .repurchase-summary {
+        display: none !important;
+    }
+    
+    .content {
+        margin: 0 !important;
+        padding: 20px !important;
+    }
+    
+    .products-table {
+        width: 100% !important;
+        font-size: 12px !important;
+    }
+    
+    .products-table th,
+    .products-table td {
+        padding: 8px !important;
+        border: 1px solid #ddd !important;
+    }
+    
+    h2 {
+        margin-bottom: 20px !important;
+        font-size: 18px !important;
+    }
+}

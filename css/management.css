@@ -1,0 +1,128 @@
+/* Management Panel Styles */
+.management-panel {
+    width: auto;
+    height: 460px;
+    background: #F8F9FA;
+    border: 1px solid rgba(29, 36, 46, 0.3);
+    border-radius: 4px;
+    margin: 30px 0 0 0;
+    padding: 24px;
+    position: absolute;
+    left: 275px;
+    right: 20px;
+    top: 135px;
+}
+
+/* Search Form */
+.search-form {
+    display: flex;
+    align-items: center;
+    width: 308px;
+    height: 38px;
+    background: white;
+    border: 2.5px solid #C92126;
+    border-radius: 4px;
+    padding: 0 12px;
+    flex-shrink: 0;
+}
+
+.search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    background: transparent;
+    min-width: 0;
+}
+
+.search-icon {
+    width: 14px;
+    height: 14px;
+    margin-left: 10px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+/* Panel Controls */
+.panel-controls {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.panel-controls form {
+    margin: 0;
+}
+
+/* Filter Form */
+.filter-form {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.filter-dropdown {
+    width: 145px;
+    height: 38px;
+    padding: 0 15px;
+    border: 2px solid rgba(29, 36, 46, 0.3);
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+    background: white;
+}
+
+/* Filter Buttons */
+.apply-filter-btn {
+    height: 38px;
+    padding: 0 19px;
+    background: #C92126;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.apply-filter-btn:hover {
+    background: #A81C20;
+}
+
+.reset-filter-btn {
+    height: 38px;
+    padding: 0 15px;
+    background: #6C757D;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+.reset-filter-btn:hover {
+    background: #5A6268;
+}
+
+/* Add Product Button */
+.add-product-btn {
+    width: 220px;
+    height: 45px;
+    background: #C92126;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    position: absolute;
+    top: 99px;
+    right: 20px;
+}

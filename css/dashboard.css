@@ -1,0 +1,353 @@
+/* Content Container */
+.content-container {
+    display: flex;
+    gap: 55px;
+    margin-top: 30px;
+}
+
+/* Dashboard Layout */
+.dashboard-container {
+    display: flex;
+    gap: 30px;
+    margin-top: 25px;
+    align-items: flex-start;
+}
+
+.dashboard-left {
+    flex: 0 0 10px;
+}
+
+.dashboard-right {
+    margin-top: -20px;
+    flex: 1;
+    max-width: 400px;
+}
+
+/* Recent Activity Section - Right Side */
+.recent-activity-section {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-top: 20px;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Prevents any overflow */
+}
+
+.recent-activity-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #2c3e50;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+    flex-shrink: 0;
+}
+
+.recent-activity-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    flex: 1;
+    padding-right: 8px;
+}
+
+/* Custom Scrollbar - Only Vertical */
+.recent-activity-grid::-webkit-scrollbar {
+    width: 8px;
+    height: 0; 
+}
+
+.recent-activity-grid::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.recent-activity-grid::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.recent-activity-grid::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.activity-card {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 15px;
+    border-left: 4px solid #3498db;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+.activity-card:hover {
+    transform: translateX(5px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.192);
+}
+
+.activity-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.activity-user {
+    font-weight: 600;
+    color: #2c3e50;
+    font-size: 13px;
+    flex: 1;
+}
+
+.activity-time {
+    color: #7f8c8d;
+    font-size: 11px;
+    white-space: nowrap;
+    margin-left: 10px;
+}
+
+.activity-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.activity-detail-label {
+    font-weight: 500;
+    color: #2c3e50;
+    font-size: 13px;
+}
+
+.activity-detail-value {
+    color: #7f8c8d;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Dashboard Boxes */
+.box {
+    width: 212px;
+    height: 140px;
+    border-radius: 4px;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+}
+
+.box.green {
+    background: rgba(1, 167, 104, 0.3);
+    border-color: #01A768;
+}
+
+.box.yellow {
+    background: rgba(254, 214, 0, 0.3);
+    border-color: #FED600;
+}
+
+.box.blue {
+    background: rgba(3, 169, 245, 0.3);
+    border-color: #03A9F5;
+}
+
+.box.red {
+    background: rgba(240, 72, 62, 0.3);
+    border-color: #F0483E;
+}
+
+.box-inner {
+    flex: 1;
+    background: white;
+    border-bottom: 1px solid;
+    border-radius: 4px 4px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.box.green .box-inner { border-color: #01A768; }
+.box.yellow .box-inner { border-color: #FED600; }
+.box.blue .box-inner { border-color: #03A9F5; }
+.box.red .box-inner { border-color: #F0483E; }
+
+.box-inner img {
+    width: 37px;
+    height: 37px;
+}
+
+.box-status {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+}
+
+.box-label {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.box-view {
+    font-size: 11px;
+    line-height: 22px;
+    text-align: center;
+    color: #1D242E;
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+/* Activity Boxes - Vertical Stack */
+.activity-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 0;
+}
+
+.activity-box {
+    width: 100%;
+    max-width: 310px;
+    height: 97px;
+    border: 1px solid rgba(29, 36, 46, 0.3);
+    border-radius: 4px;
+    background: white;
+}
+
+.activity-header {
+    padding: 8px 0 8px 18px;
+    border-bottom: 1px solid rgba(29, 36, 46, 0.3);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.activity-content {
+    padding: 10px 0 0 18px;
+}
+
+.activity-number {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.activity-label {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+/* Sales History */
+.sales-history {
+    width: 610px;
+    height: 293px;
+    background: #F6F7F8;
+    border: 1px solid #000000;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-left: 2px;
+}
+
+.sales-header {
+    padding: 15px 20px;
+    background: #1D242E;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 22px;
+}
+
+.sales-content {
+    padding: 0;
+    height: calc(100% - 52px);
+    overflow-y: auto;
+}
+
+/* Sales History Table */
+.sales-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.sales-table thead {
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 1;
+}
+
+.sales-table th {
+    padding: 12px 15px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 14px;
+    color: #1D242E;
+    border-bottom: 1px solid #ddd;
+}
+
+.sales-table tbody tr {
+    background: white;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    margin: 10px 15px;
+    display: table;
+    width: calc(100% - 30px);
+    table-layout: fixed;
+}
+
+.sales-table tbody tr + tr {
+    margin-top: 10px;
+}
+
+.sales-table td {
+    padding: 15px;
+    font-size: 14px;
+    color: #1D242E;
+}
+
+.sales-table tbody {
+    display: block;
+    padding: 15px;
+}
+
+/* Column widths */
+.sales-table th:nth-child(1),
+.sales-table td:nth-child(1) { width: 20%; } /* Transaction ID */
+.sales-table th:nth-child(2),
+.sales-table td:nth-child(2) { width: 20%; } /* Time */
+.sales-table th:nth-child(3),
+.sales-table td:nth-child(3) { width: 15%; } /* Items */
+.sales-table th:nth-child(4),
+.sales-table td:nth-child(4) { width: 20%; } /* Amount */
+.sales-table th:nth-child(5),
+.sales-table td:nth-child(5) { width: 25%; } /* Payment Method */
+
+/* Dashboard Row - Deprecated */
+.dashboard-row {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+/* Recent Activity - Old Style (for backward compatibility) */
+.recent-activity {
+    width: 310px;
+}
+
+.recent-title {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 15px;
+}

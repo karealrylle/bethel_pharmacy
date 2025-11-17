@@ -1,0 +1,163 @@
+/* Tables Styles */
+.products-table-container {
+    width: 100%;
+    height: 350px;
+    overflow-y: auto;
+    border: 1px solid rgba(29, 36, 46, 0.3);
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.products-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.products-table thead {
+    position: sticky;
+    top: 0;
+    background: #C92126;
+    color: white;
+    z-index: 1;
+}
+
+.products-table th {
+    padding: 12px 20px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 12px;
+    border-bottom: 1px solid rgba(29, 36, 46, 0.3);
+}
+
+.products-table td {
+    text-align: center;
+    padding: 10px 8px;
+    font-size: 11px;
+    border-bottom: 1px solid rgba(29, 36, 46, 0.1);
+    color: #1D242E;
+    vertical-align: middle;
+}
+
+.products-table tbody tr:hover {
+    background: rgba(201, 33, 38, 0.05);
+}
+
+/* Action Buttons */
+.edit-icon {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    margin-left: 18px;
+}
+
+.delete-icon {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    margin-left: 8px;
+    gap: 15px;
+}
+
+.action-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15 px;
+}
+
+/* Status Badges */
+.status-badge {
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.status-green { 
+    background: rgba(1, 167, 104, 0.2); 
+    color: #01A768; 
+}
+
+.status-yellow { 
+    background: rgba(254, 214, 0, 0.2); 
+    color: #B89500; 
+}
+
+.status-red { 
+    background: rgba(240, 72, 62, 0.2); 
+    color: #c2251d; 
+}
+
+.status-orange { 
+    background: #fd8a1e44;
+    color: #da781c; 
+}
+
+/* Batch View Button */
+.view-batches-btn {
+    padding: 0px 3px;
+    border-radius: 3px;
+    font-size: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.view-batches-btn:hover {
+    opacity: 0.8;
+    color: white;
+}
+
+.view-batches-btn.status-green {
+    background: rgba(1, 167, 104, 0.2);
+    color: #01A768;
+    transition: color white;
+}
+
+.view-batches-btn.status-yellow {
+    background: rgba(254, 214, 0, 0.2);
+    color: #B89500;
+}
+
+.view-batches-btn.status-orange {
+    background: #fd8a1e44;
+    color: #da781c;
+}
+
+.view-batches-btn.status-red {
+    background: rgba(240, 72, 62, 0.2);
+    color: #c2251d;
+}
+
+.no-batches-text {
+    color: #999;
+    font-size: 11px;
+}
+
+/* Panel Controls Layout */
+.panel-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+/* Print Button */
+.print-btn {
+    background: #c2251d;
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s;
+    white-space: nowrap;
+}
+
+.print-btn:hover {
+    background: #a01e18;
+}
+
